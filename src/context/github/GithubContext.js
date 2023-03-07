@@ -35,8 +35,9 @@ export const GithubProvider = ({ children }) => {
     const { items } = await response.json();
 
     dispatch({ type: "GET_USERS", payload: items });
-  }; //get single user results
+  };
 
+  //get single user results
   const getUser = async (login) => {
     setLoading();
 
